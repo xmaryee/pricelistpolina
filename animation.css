@@ -392,8 +392,14 @@
 .full__title:hover path,
 .extra__title:hover path,
 .full__stage-title:hover path {
-    fill: #8a0c35;
+    fill: #B50F3E;
     transform: scale(1.01);
+}
+
+.hearts path{
+    fill: var(--txt-color);
+    transform: scale(1.01);
+    animation: fadeInUp 1s ease-out 1.5s both;
 }
 
 /* Анимация загрузки */
@@ -436,15 +442,23 @@ html {
 }
 
 /* Микро-анимации для иконок */
-.inclusive__svg,
-.footer__item svg {
+.inclusive__svg path,
+.footer__item svg  {
     transition: all 0.3s ease;
+    fill: var(--txt-color);
 }
 
 .inclusive__svg:hover,
 .footer__item svg:hover {
     transform: scale(1.1) rotate(5deg);
     filter: drop-shadow(0 0 5px rgba(181, 15, 62, 0.5));
+}
+.fix__title path,
+.full__title path,
+.extra__title path,
+.full__stage-title path {
+    fill: var(--txt-color);
+    transform: scale(1.01);
 }
 
 /* Адаптивные анимации */
