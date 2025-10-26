@@ -243,6 +243,7 @@ h1, h2, h3, h4,p{
     margin-right: auto;
     max-width: none;
     left: 45%;
+    top: 30%;
 }
 
 .header__text-block{
@@ -263,6 +264,7 @@ h1, h2, h3, h4,p{
     right: 45%;
     padding-right: 25px;
     margin-bottom: 70px;
+    top: 30%;
 }
 
 .header__descr-last{
@@ -289,6 +291,52 @@ h1, h2, h3, h4,p{
 }
 
 
+/*education*/
+.education__container{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.education__title{
+    max-width: 450px;
+    margin-bottom: 10px;
+}
+
+.education__list{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+}
+
+.education__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.education__text{
+    text-align: center;
+    background-color: var(--bg-light);
+    padding: 10px 16px;
+    margin-bottom: 8px;
+    font-size: 18px;
+    border-radius: var(--b-radius);
+    max-width: 170px;
+}
+
+.education__btn{
+    font-size: 18px;
+    border: solid 1px var(--txt-color);
+    padding: 5px 16px;
+    border-radius: var(--b-radius);
+    width: 100%;
+    text-align: center;
+}
 
 /*fix*/
 .fix__container{

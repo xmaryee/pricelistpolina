@@ -26,6 +26,25 @@
     width: 80%;
     left: 41%;
     }
+    .education__list {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .education__item {
+        min-width: 100%;
+        max-width: 100%;
+    }
+    
+    .education__text {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+    
+    .education__btn {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
 }
 /* Адаптивность для мобильных */
 @media (max-width: 580px) {
@@ -164,6 +183,23 @@
         border-radius: 8px;
     }
 
+    .education__title {
+        max-width: 300px;
+    }
+    
+    .education__list {
+        padding: 10px;
+        gap: 10px;
+    }
+    
+    .education__text {
+        font-size: 14px;
+    }
+    
+    .education__btn {
+        font-size: 14px;
+    }
+
     .full__price{
         font-size: 14px;
         line-height: 1;
@@ -187,6 +223,13 @@
     position: relative; /* Убираем абсолютное позиционирование */
     right: auto;
     margin-bottom: 20px;
+    }
+    .education__title,
+    .fix__title,
+    .full__title,
+    .extra__title,
+    .full__stage-title {
+        max-width: 300px;
     }
 
     .header__img{
