@@ -162,9 +162,8 @@ h1, h2, h3, h4,p{
 
 .header{
     background-color: var(--txt-color);
-    filter: drop-shadow(0 0 15px var(--txt-color))
-            drop-shadow(0 0 25px var(--txt-color))
-            drop-shadow(0 0 25px var(--txt-color));
+    filter: drop-shadow(0 0 10px var(--txt-color))
+            drop-shadow(0 0 10px var(--txt-color));
     padding: 20px 0 0 0;
     height: 100vh;
     margin-bottom: 20px;
@@ -263,7 +262,6 @@ h1, h2, h3, h4,p{
     animation: fadeInUp 1s ease-out 0.6s both;
     right: 45%;
     padding-right: 25px;
-    padding-bottom: 30px;
     margin-bottom: 70px;
 }
 
@@ -271,12 +269,6 @@ h1, h2, h3, h4,p{
     max-width: 80%;
    }
 
-.header__logo-block{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-    flex-shrink: 0; 
-}
 
 .header__logo path{
     fill: var(--bg-light)

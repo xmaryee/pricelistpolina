@@ -70,10 +70,12 @@
         padding: 10px 14px;
     }
     .full__price{
-        font-size: 12px;
+        font-size: 16px;
         text-wrap: wrap;
         width: 100%;
         min-width: 60%;
+        font: optional;
+        line-height: 0.7;
     }
     .full__pricer{
         font-size: 14px;
@@ -88,10 +90,11 @@
         margin-bottom: 8px
     }
     .extra__item-price{
-        font-size: 12px;
+        font-size: 14px;
         text-wrap: wrap;
         width: 100%;
         min-width: 60%;
+        line-height: 1;
     }
     .extra__item-pricer{
         font-size: 14px;
@@ -131,52 +134,74 @@
 
 }
 
-@media (max-width:460px){
+@media (max-width:470px){
 
     .header__text-block{
         right: auto;
         top: 2%;
         text-align: center;
-        font-size: 13px;
+        font-size: 16px;
         gap: 5px;
     }
     .header__descr-last{
-    max-width: 100%;
-    margin-bottom: 10px;
+        max-width: 100%;
+        margin-bottom: 10px;
     }
     .header__buttons{
         align-items: center;
-    }
-    
-    .header__descr:not(:last-child){
-        padding-bottom: 5px;
-        border-bottom: solid 1px var(--bg-color);
+        gap: 10px;
     }
 
     .header__img{
         left: 5%;
-        bottom: -10%;
+        bottom: -20%;
         width: 100%;
-        
-
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 0 80%);
     }
     
     .header__btn{
-        font-size: 12px;
+        font-size: 15px;
         border-radius: 8px;
     }
 
     .full__price{
-        font-size: 8px;
+        font-size: 14px;
+        line-height: 1;
+        letter-spacing: 0.1px;
+        width: 115px;
+
     }
     .full__pricer{
-        font-size: 8px;
+        font-size: 14px;
+        letter-spacing: 0.1px;
+        width: 10%;
+    }
+    .dots{
+        border-bottom: dotted 3px;
     }
 }
 
-@media (max-width:370px){
+@media (max-width:430px){
+    .header__text-block{
+    line-height: 1;
+}
+
     .header__img{
         clip-path: none;
         bottom: 0;
+    }
+
+    
+}
+
+@media (max-width:370px){
+    .header__text-block{
+    font-size: 14px;
+    }
+    .header__btn{
+        font-size: 14px;
+    }
+    .full__price{
+        font-weight: 500;
     }
 }
