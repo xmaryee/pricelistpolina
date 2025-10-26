@@ -184,11 +184,36 @@
 @media (max-width:430px){
     .header__text-block{
     line-height: 1;
-}
+    position: relative; /* Убираем абсолютное позиционирование */
+    right: auto;
+    margin-bottom: 20px;
+    }
 
     .header__img{
         clip-path: none;
         bottom: 0;
+        max-height: 70vh;
+        position: relative;
+        bottom: -10px;
+    }
+
+    .header__descr-last{
+        max-width: 100%; /* Убираем ограничение ширины */
+    }
+
+    .header__about{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header__buttons{
+        margin-bottom: 10px;
+    }
+
+    .header{
+        height: auto; /* Убираем фиксированную высоту */
+        min-height: 100vh; /* Но не меньше экрана */
+        padding-bottom: 20px; /* Добавляем отступ снизу */
     }
 
     
@@ -204,4 +229,12 @@
     .full__price{
         font-weight: 500;
     }
+
+    .header{
+        height: auto; /* Убираем фиксированную высоту */
+        min-height: 100vh; /* Но не меньше экрана */
+        padding-bottom: 20px; /* Добавляем отступ снизу */
+    }
+
+
 }
