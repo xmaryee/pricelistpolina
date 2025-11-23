@@ -22,10 +22,7 @@
     .fix__btn{
         border-width: 1px;
     }
-    .header__img{
-    width: 80%;
-    left: 41%;
-    }
+
     .education__list {
         flex-direction: column;
         gap: 15px;
@@ -37,7 +34,6 @@
     }
     
     .education__text {
-        font-size: 16px;
         padding: 8px 12px;
     }
     
@@ -45,7 +41,7 @@
         font-size: 16px;
         padding: 8px 12px;
     }
-}
+}   
 /* Адаптивность для мобильных */
 @media (max-width: 580px) {
     .container {
@@ -56,16 +52,26 @@
         max-width: 100px;
     }
 
+    .header__about{
+        flex-direction: column;
+    }
+
     .header__text-block{
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 500;
         gap: 8px;
         flex-direction: column;
         line-height: 1.3;
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+    .header__img{
+    max-width:min-content;
+    margin-bottom: 15px;
     }
 
     .header__btn{
-        font-size: 14px;
+        font-size: 18px;
         padding: 3px 5px;
         border: solid 1px var(--white-color);
         border-radius: 10px;
@@ -76,7 +82,7 @@
         width: 90%;
     }
     .fix_descr {
-        font-size: 20px;
+        font-size: 23px;
     }
     .fix__btn{
         font-size: 16px;
@@ -87,40 +93,6 @@
     }
     .full__block-item{
         padding: 10px 14px;
-    }
-    .full__price{
-        font-size: 16px;
-        text-wrap: wrap;
-        width: 100%;
-        min-width: 60%;
-        font: optional;
-        line-height: 0.7;
-    }
-    .full__pricer{
-        font-size: 14px;
-        text-wrap: nowrap;
-        align-self: center;
-        width: 100%;
-        min-width: min-content;
-    }
-    .dots {
-        border-bottom: dotted 4px;
-        margin-right: 3px;
-        margin-bottom: 8px
-    }
-    .extra__item-price{
-        font-size: 14px;
-        text-wrap: wrap;
-        width: 100%;
-        min-width: 60%;
-        line-height: 1;
-    }
-    .extra__item-pricer{
-        font-size: 14px;
-        text-wrap: nowrap;
-        align-content: end;
-        text-align: end ;
-        
     }
 
     .footer__container{
@@ -156,8 +128,6 @@
 @media (max-width:470px){
 
     .header__text-block{
-        right: auto;
-        top: 2%;
         text-align: center;
         font-size: 16px;
         gap: 5px;
@@ -170,16 +140,9 @@
         align-items: center;
         gap: 10px;
     }
-
-    .header__img{
-        left: 5%;
-        bottom: -20%;
-        width: 100%;
-        clip-path: polygon(0 0, 100% 0, 100% 80%, 0 80%);
-    }
     
     .header__btn{
-        font-size: 15px;
+        font-size: 16px;
         border-radius: 8px;
     }
 
@@ -193,37 +156,44 @@
     }
     
     .education__text {
-        font-size: 14px;
+        font-size: 20px;
     }
-    
-    .education__btn {
-        font-size: 14px;
+
+
+    .full__block-item{
+        flex-direction: column;
+        padding: 10px 5px ;
     }
 
     .full__price{
-        font-size: 14px;
-        line-height: 1;
-        letter-spacing: 0.1px;
-        width: 115px;
-
+        max-width: 100%;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 5px;
     }
     .full__pricer{
-        font-size: 14px;
-        letter-spacing: 0.1px;
-        width: 10%;
+        max-width: 100%;
+        margin: 0;
     }
-    .dots{
-        border-bottom: dotted 3px;
+
+    .extra__item{
+        flex-direction: column;
+        padding: 10px 5px ;
+    }
+
+    .extra__item-price{
+        max-width: 100%;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 5px;
+    }
+    .extra__item-pricer{
+        max-width: 100%;
+        margin: 0;
     }
 }
 
 @media (max-width:430px){
-    .header__text-block{
-    line-height: 1;
-    position: relative; /* Убираем абсолютное позиционирование */
-    right: auto;
-    margin-bottom: 20px;
-    }
     .education__title,
     .fix__title,
     .full__title,
@@ -232,31 +202,8 @@
         max-width: 300px;
     }
 
-    .header__img{
-        clip-path: none;
-        bottom: 0;
-        max-height: 70vh;
-        position: relative;
-        bottom: -10px;
-    }
-
-    .header__descr-last{
-        max-width: 100%; /* Убираем ограничение ширины */
-    }
-
-    .header__about{
-        display: flex;
-        flex-direction: column;
-    }
-
     .header__buttons{
         margin-bottom: 10px;
-    }
-
-    .header{
-        height: auto; /* Убираем фиксированную высоту */
-        min-height: 100vh; /* Но не меньше экрана */
-        padding-bottom: 20px; /* Добавляем отступ снизу */
     }
 
     
@@ -268,9 +215,6 @@
     }
     .header__btn{
         font-size: 14px;
-    }
-    .full__price{
-        font-weight: 500;
     }
 
     .header{
