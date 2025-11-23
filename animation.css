@@ -101,6 +101,7 @@
 
 
 /* Анимация для заголовков */
+.education__title,
 .fix__title,
 .full__title,
 .extra__title,
@@ -136,10 +137,22 @@
 }
 
 /* Стили для кнопок */
+.education__btn{
+    position: relative;
+    letter-spacing: 0.5px;
+    transition: all 0.4s ease;
+    animation: fadeInUp 1s ease-out 1s both;
+    
+}
+
+.education__btn:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(181, 15, 62, 0.4);
+}
+
 .fix__btn {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(135deg, var(--bg-light), var(--bg-color));
     transition: all 0.4s ease;
     animation: fadeInUp 1s ease-out 1s both;
     font-weight: 600;
@@ -300,13 +313,13 @@
     transition: all 0.3s ease;
 }
 
-.full__footnote-text::before {
-    content: '★';
+/* .full__footnote-text::before {
+    content: '*';
     position: absolute;
     left: 5px;
     color: var(--txt-color);
     animation: pulse 2s ease-in-out infinite;
-}
+} */
 
 .full__footnote-text:hover {
     transform: translateX(5px);
@@ -380,6 +393,7 @@
 
 /* Интерактивные SVG */
 .header__logo path,
+.education__title path,
 .fix__title path,
 .full__title path,
 .extra__title path,
@@ -387,6 +401,7 @@
     transition: all 0.4s ease;
 }
 
+.education__title:hover path,
 .header__logo:hover path,
 .fix__title:hover path,
 .full__title:hover path,
@@ -457,7 +472,8 @@ html {
 .fix__title path,
 .full__title path,
 .extra__title path,
-.full__stage-title path {
+.full__stage-title path,
+.education__title path {
     fill: var(--txt-color);
     transform: scale(1.01);
 }
